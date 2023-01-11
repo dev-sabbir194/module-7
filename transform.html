@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+
+/* -------------scale---------- */
+
+        .container, .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid khaki;
+        }
+        .container{
+            background-color: lightblue;
+        }
+        .inner{
+            background-color: lightcoral;
+            transform: scale(.75);
+        }
+/*----------------rotate---------------- */
+
+        .rotate .container, .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid #8cf09d;
+        }
+
+
+        .rotate .inner{
+            background-color: lightcoral;
+            transform: rotate(30deg);
+        }
+
+/*----------------rotate-scale-both---------------- */
+
+        .rotate-scale-both .container, .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid #ff12c4;
+        }
+        .rotate-scale-both .container{
+            background-color: #00ffff;
+        }
+        .rotate-scale-both .inner{
+            background-color: rgb(150, 240, 128);
+            transform: rotate(30deg) scale(.5);
+        }
+
+
+/* -------------translete-------- */
+
+     .translete, .container .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid khaki;
+        }
+        .translete .container{
+            background-color: lightblue;
+        }
+        .translete .inner{
+            background-color: lightcoral;
+            transform: translateY(50px) scale(.6) rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">This is Transform</h1><br><br>
+
+    <h1>Scale-section</h1>
+    <div class="box container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box container">
+        <div class="inner">box-3</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Rotate-section</h1>
+    <div class="rotate">
+        <div class="box container">
+            <div class="inner">box-1</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-2</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-3</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Rotate-&-scale-both</h1>
+
+    <div class="rotate-scale-both">
+
+
+        <div class="box container">
+            <div class="inner">box-1</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-2</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-3</div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Translete</h1><br>
+    <div class="translete">
+        <div class="box container">
+            <div class="inner">box-1</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-2</div>
+        </div>
+        <div class="box container">
+            <div class="inner">box-3</div>
+        </div>
+
+    </div>
+</body>
+</html>
